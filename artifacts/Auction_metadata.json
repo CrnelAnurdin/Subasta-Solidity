@@ -56,6 +56,59 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "AuctionEnded",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "estado",
+				"outputs": [
+					{
+						"internalType": "enum Auction.Estado",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "finalizeWithdrawals",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getExcess",
 				"outputs": [
@@ -112,6 +165,39 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "manualWithdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "offerWinAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "offerWinAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -178,11 +264,11 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x7edde0b214b821763b585b34382eaf99f429146ebb165ff58c9cf3b5c8db0d14",
+			"keccak256": "0x636143e68ca67cb42e1331b6cd960e551c257ba136e8237dfb7851b92597c549",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f1c59648bcad45bb87fa0d120b2235e1379823feae0231f0d41cab9aa37cd5cc",
-				"dweb:/ipfs/QmfP7UCManGcpPDm6aFkfgAps4XAu8rqA7oB1hGcvrQkzo"
+				"bzz-raw://b751291a5caae07b2394d3c622bf925b302974df665ffe30d09f26f5464f399b",
+				"dweb:/ipfs/QmSa3y47RypPozK9RC66rA2Pw9Yh6K3Vqbo4zxuH4iHgyb"
 			]
 		}
 	},
