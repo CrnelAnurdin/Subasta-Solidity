@@ -264,11 +264,11 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x636143e68ca67cb42e1331b6cd960e551c257ba136e8237dfb7851b92597c549",
+			"keccak256": "0xcb50770f4f15c5b4dbee62e0bc60514b1730e3d9e35fcc2a33d5d21faca9c7b3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b751291a5caae07b2394d3c622bf925b302974df665ffe30d09f26f5464f399b",
-				"dweb:/ipfs/QmSa3y47RypPozK9RC66rA2Pw9Yh6K3Vqbo4zxuH4iHgyb"
+				"bzz-raw://28c2a4153f9777ccff222dec82b5af0cb0710010521feb62d0bc724a82e1cba7",
+				"dweb:/ipfs/QmbahJSyNyuFV6vSwYy5iABNhykw9CXkZjrQkF8Qqze5Mu"
 			]
 		}
 	},

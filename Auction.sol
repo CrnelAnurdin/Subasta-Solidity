@@ -87,13 +87,13 @@ contract Auction  {
         emit Withdraw(msg.sender,refundAmount);
     }
 
-    function bulkWithdraw() internal onlyAfterAuction onlyOwner  { //devuelvo los retiros sin reclamar pasado los x dias definidos para retiro manual
+    function bulkWithdraw() internal onlyAfterAuction onlyOwner  { //devuelvo los retiros sin reclamar pasado los x dias definidos para retiro manual cobrando una mayor comision
         for (uint i = 0; i < offerAddresses.length; i++) {
             address addresReturn = offerAddresses[i];
             uint amount = offers[addresReturn].offerAmount;        
             if (amount > 0 && offerWinAddress != addresReturn) {
                 offers[addresReturn].offerAmount = 0;  
-                uint refundAmount = amount * 98 / 100;
+                uint refundAmount = amount * 90 / 100; 
                 payable(addresReturn).transfer(refundAmount);
             }
         }
